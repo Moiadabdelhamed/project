@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="Style_cars2.css">
+</head>
+<style>
+    .video-container {
+
+      max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+#playButton{
+
+    color: #fff;
+    background-color:#009688;
+}
+
+
+video {
+  width: 100%;
+}
+
+.controls {
+
+  margin-top: 10px;
+}
+
+input[type="range"] {
+  width: 150px;
+  margin: 0 10px;
+}
+
+</style>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Classic-Guard-shop-removebg-preview.png" class="logo">
+            <p>&nbsp;</p>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="login.html">LOG OUT</a></li>
+            </ul>
+
+        </div>
+
+        <div class="contain">
+
+
+            <div class="container">
+                <div class="product">
+                    <div class="img">&nbsp;</div>
+                    <h3>CAR 1</h3>
+                    <p>Description of CAR 1.</p>
+                    <p>$5000</p>
+                </div>
+
+                <div class="product">
+                   
+                    <div class="img">&nbsp;</div>
+                    <h3>CAR 2</h3>
+                    <p>Description of CAR 2.</p>
+                    <p>$4000</p>
+                </div>
+
+                <div class="product">
+                    <div class="img">&nbsp;</div>
+                    <h3>CAR 3</h3>
+                    <p>Description of CAR 3.</p>
+                    <p>$3000</p>
+                </div>
+
+                <div class="product">
+                    <div class="video-container">
+                        <video id="myVideo" >
+                          <source src="FORD 1966 MUSTANG _ classic car cinematic film.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                        <div class="controls">
+                          <button id="playButton">Play</button>
+                          <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="1">
+                        </div>
+                        
+                      </div>
+                    
+                    
+                    <h3> CAR 4</h3>
+                    <p>Description of CAR 4.</p>
+                    <p>$2500</p>
+                </div>
+
+                <div class="product">
+                    <div class="img">&nbsp;</div>
+                    <h3>CAR 5</h3>
+                    <p>Description of CAR 5.</p>
+                    <p>$2000</p>
+                </div>
+
+                <div class="product">
+                    <div class="img">&nbsp;</div>
+                    <h3>CAR 6</h3>
+                    <p>Description of CAR 6.</p>
+                    <p>$1500</p>
+ 
+                </div>
+                <a href="cars.html">
+                    <button type="button"><span></span>Previous</button>
+                </a>
+
+            </div>
+        </div>
+<script>
+    const video = document.getElementById('myVideo');
+const playButton = document.getElementById('playButton');
+const volumeRange = document.getElementById('volumeRange');
+
+playButton.addEventListener('click', function() {
+  if (video.paused) {
+    video.play();
+    playButton.textContent = 'Pause';
+  } else {
+    video.pause();
+    playButton.textContent = 'Play';
+  }
+});
+
+volumeRange.addEventListener('input', function() {
+  video.volume = volumeRange.value;
+});
+
+
+
+</script>
+        
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pexels-pixabay-461824.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .navbar img {
+    position: absolute;
+    top: 1px;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(pexels-pixabay-461824.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.8s;
+}
+
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover{
+color: #000;
+}
+
+span {
+   
+    background: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .8s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover span {
+    border: none;
+}
+
+
+
+
+.contain {
+    background-color: #009688;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    opacity: 75%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.product {
+    
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 40%;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.next-page {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.next-page button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.next-page button:hover {
+    background-color: #2980b9;
+}
+
+.img{
+    /* background-image: url("./istockphoto-98441225-612x612-removebg-preview.png"); */
+    background-size: contain;
+    background-position: center;
+    max-width: 20rem;
+    min-width: 20rem;
+    max-height: 15rem;
+    min-height: 15rem;
+    background-repeat: no-repeat;
+}
+
+
+
+.container .product:nth-of-type(1) .img{
+    background-image: url("cars/car-7-removebg-preview.png");
+}
+
+.container .product:nth-of-type(2) .img{
+    background-image: url("./cars/car-8-removebg-preview.png");
+}
+.container .product:nth-of-type(3) .img{
+    background-image: url("./cars/car-9-removebg-preview.png");
+}
+.container .product:nth-of-type(4) .img{
+    background-image: url("./cars/car-10-removebg-preview.png");
+}
+.container .product:nth-of-type(5) .img{
+    background-image: url("./cars/car-11.png");
+}
+.container .product:nth-of-type(6) .img{
+    background-image: url("./cars/car-12.png");
+}
